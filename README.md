@@ -2,6 +2,8 @@
 Proyecto final de 2 de DAW 
 
 De primeras vamos a hacer los estilos con boostrap linkeado , una vez tengamos los estilos veremos de descargar los ficheros
+# IMPORTANTE
+Para trabajar nos crearemos 2 ramas diferentes 1 por cada grupo de trabajo , y una vez terminado los cambios los subiremos a una nueva rama que se llamara test , una vez se compruebe que esta todo bien se unira a la rama principal 
 
 Reparto de tareas para la semana que viene , he decidido poneros en grupos de dos , para que asi tengamos un apoyo.
 
