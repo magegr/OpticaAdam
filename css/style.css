@@ -102,3 +102,137 @@ body {
     font-size: 13px;
     padding: 15px;
 }
+
+/*STYLE LENTILLAS*/
+/* ===== RESET BÁSICO ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F2F2F2;
+    color: #000000;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background-color: #3D82F2;
+    padding: 1rem 0;
+}
+
+.navbar .logo {
+    border-radius: 50%;
+}
+
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0057FF;
+}
+
+/* ===== IDIOMAS ===== */
+.idiomas img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* ===== CARDS ===== */
+.card-daw {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-daw:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.card-img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* ===== TÍTULOS ===== */
+.titulos {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3D82F2;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* ===== BOTONES ===== */
+.button {
+    background-color: #0057FF;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3D82F2;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+footer h6 {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer p, footer a {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    color: #3D82F2;
+}
+
+footer img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .titulos {
+        font-size: 18px;
+    }
+
+    .card-img {
+        height: 180px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
