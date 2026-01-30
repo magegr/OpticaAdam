@@ -1,0 +1,90 @@
+/* --- 1. COLORES BASE Y CUERPO --- */
+body {
+    background-color: #FFFFFF; /* Fondo Blanco según guía */
+    color: #000000;            /* Texto Negro para lectura */
+    font-family: Arial, sans-serif;
+}
+
+/* --- 2. CABECERA Y NAVEGACIÓN --- */
+.navbar {
+    background-color: #FFFFFF !important;
+    border-bottom: 2px solid #F2F2F2; /* Gris claro de la guía para separar */
+}
+
+.nav-link {
+    /* Color Azul Acento para enlaces de navegación */
+    color: #0057FF !important; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-link.active {
+    /* Color Azul Principal para la página donde estamos */
+    color: #3D82F2 !important;
+}
+
+.logo {
+    height: 100px;
+    width: 190px;
+}
+/* --- 3. TÍTULOS Y SECCIONES --- */
+.titulos {
+    /* Color Azul Principal para encabezados (Header 32px) */
+    color: #3D82F2;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* --- 4. CONTENEDORES Y TARJETAS --- */
+.card-daw {
+    /* Color Gris Claro para fondos de contenedores y cards */
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 8px;
+}
+
+.card-title {
+    color: #000000; /* Texto negro para títulos de producto */
+}
+
+/* --- 5. BOTONES DE ACCIÓN --- */
+.button {
+    /* Color Azul Acento para botones de acción (pide cita, añadir, etc) */
+    background-color: #0057FF;
+    color: #FFFFFF; /* Texto blanco sobre azul */
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    /* Al pasar el ratón, usamos el Azul Principal */
+    background-color: #3D82F2;
+    transition: 0.3s;
+}
+
+/* --- 6. PIE DE PÁGINA (FOOTER) --- */
+footer {
+    /* Color Negro para el fondo del pie de página */
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 30px 0;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Iconos de redes sociales */
+.fa-brands, .fa-solid {
+    /* Iconos en blanco para resaltar sobre el fondo negro */
+    color: #FFFFFF;
+}
+
+/* --- 7. DETALLES EXTRA (OPCIONAL DAW) --- */
+.text-destacado {
+    color: #3D82F2; /* Usar el azul principal para resaltar palabras clave */
+}
