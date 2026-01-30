@@ -1,0 +1,13 @@
+#header-start {
+    background-color: rgb(177, 204, 229);
+    
+}
+
+header h2, header h4 {
+    font-weight: 600;
+}
+
+header img {
+    scale: calc(2.5);
+    min-width: 50px;
+}
