@@ -8,8 +8,21 @@ header h2, header h4 {
     margin: 0;
 }
 
-header img {
+header a img {
     scale: calc(2.5);
     min-width: 50px;
     padding-bottom: 1px;
+}
+
+nav ul li {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.li-lg {  
+    font-size: 1.2em;
+}
+
+.li-sm {
+    font-size: 0.8em;
 }
