@@ -55,5 +55,79 @@ nav ul li {
     left: 80px;
   background: rgba(255,255,255,0.92);
   color: #0d2b45;
-  max-width: 720px;
+  max-width: 720px;}
+body {
+    background-color: #FFFFFF;
+    color: #000000;          
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #FFFFFF !important;
+    border-bottom: 2px solid #F2F2F2; 
+}
+
+.nav-link {
+    color: #0057FF !important; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-link.active {
+    color: #3D82F2 !important;
+}
+
+.logo {
+    height: 100px;
+    width: 190px;
+}
+
+.titulos {
+    color: #3D82F2;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-daw {
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 8px;
+}
+
+.card-title {
+    color: #000000;
+}
+
+.button {
+    background-color: #0057FF;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #3D82F2;
+    transition: 0.3s;
+}
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 30px 0;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.fa-brands, .fa-solid {
+    color: #FFFFFF;
+}
+
+.text-destacado {
+    color: #3D82F2;
 }
