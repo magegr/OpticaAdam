@@ -1,238 +1,90 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* --- 1. COLORES BASE Y CUERPO --- */
+body {
+    background-color: #FFFFFF; /* Fondo Blanco según guía */
+    color: #000000;            /* Texto Negro para lectura */
     font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: #ffffff;
+/* --- 2. CABECERA Y NAVEGACIÓN --- */
+.navbar {
+    background-color: #FFFFFF !important;
+    border-bottom: 2px solid #F2F2F2; /* Gris claro de la guía para separar */
 }
 
-/* HEADER */
-.header {
-    background-color: #e8f1f8;
-    padding: 15px 30px;
+.nav-link {
+    /* Color Azul Acento para enlaces de navegación */
+    color: #0057FF !important; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-link.active {
+    /* Color Azul Principal para la página donde estamos */
+    color: #3D82F2 !important;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: bold;
+    height: 100px;
+    width: 190px;
 }
-
-.logo img {
-    height: 40px;
-}
-
-.menu {
-    margin-top: 10px;
-    display: flex;
-    gap: 20px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #000;
-    font-size: 14px;
-}
-
-/* CARRUSEL */
-.carousel {
-    margin: 30px auto;
-    width: 80%;
-    height: 200px;
-    background-color: #999;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #000;
-    font-weight: bold;
-}
-
-/* FILTROS */
-.filters {
-    width: 80%;
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.filters button {
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-    background-color: #ccc;
-    cursor: pointer;
-}
-
-/* PRODUCTOS */
-.products {
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.card {
-    background-color: #e8f1f8;
-    border-radius: 20px;
-    height: 180px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.card img {
-    width: 80px;
-}
-
-.card h3 {
-    margin-top: 10px;
-}
-
-.card.info {
-    text-align: center;
-    font-size: 13px;
-    padding: 15px;
-}
-
-/*STYLE LENTILLAS*/
-/* ===== RESET BÁSICO ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #F2F2F2;
-    color: #000000;
-}
-
-/* ===== NAVBAR ===== */
-.navbar {
-    background-color: #3D82F2;
-    padding: 1rem 0;
-}
-
-.navbar .logo {
-    border-radius: 50%;
-}
-
-.navbar-nav .nav-link {
-    color: #FFFFFF;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #0057FF;
-}
-
-/* ===== IDIOMAS ===== */
-.idiomas img {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
-/* ===== CARDS ===== */
-.card-daw {
-    background-color: #FFFFFF;
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    margin-bottom: 2rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-daw:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-}
-
-.card-img {
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    height: 220px;
-    object-fit: cover;
-}
-
-/* ===== TÍTULOS ===== */
+/* --- 3. TÍTULOS Y SECCIONES --- */
 .titulos {
-    font-size: 20px;
-    font-weight: bold;
+    /* Color Azul Principal para encabezados (Header 32px) */
     color: #3D82F2;
+    font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 10px;
 }
 
-/* ===== BOTONES ===== */
+/* --- 4. CONTENEDORES Y TARJETAS --- */
+.card-daw {
+    /* Color Gris Claro para fondos de contenedores y cards */
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 8px;
+}
+
+.card-title {
+    color: #000000; /* Texto negro para títulos de producto */
+}
+
+/* --- 5. BOTONES DE ACCIÓN --- */
 .button {
+    /* Color Azul Acento para botones de acción (pide cita, añadir, etc) */
     background-color: #0057FF;
-    color: #FFFFFF;
+    color: #FFFFFF; /* Texto blanco sobre azul */
     border: none;
     padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 16px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .button:hover {
+    /* Al pasar el ratón, usamos el Azul Principal */
     background-color: #3D82F2;
+    transition: 0.3s;
 }
 
-/* ===== FOOTER ===== */
+/* --- 6. PIE DE PÁGINA (FOOTER) --- */
 footer {
+    /* Color Negro para el fondo del pie de página */
     background-color: #000000;
     color: #FFFFFF;
-    padding: 2rem 0;
-    margin-top: 3rem;
+    padding: 30px 0;
 }
 
-footer h6 {
-    font-family: Georgia, serif;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
-footer p, footer a {
-    font-size: 14px;
+/* Iconos de redes sociales */
+.fa-brands, .fa-solid {
+    /* Iconos en blanco para resaltar sobre el fondo negro */
     color: #FFFFFF;
 }
 
-footer a:hover {
-    color: #3D82F2;
+/* --- 7. DETALLES EXTRA (OPCIONAL DAW) --- */
+.text-destacado {
+    color: #3D82F2; /* Usar el azul principal para resaltar palabras clave */
 }
-
-footer img {
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-    .titulos {
-        font-size: 18px;
-    }
-
-    .card-img {
-        height: 180px;
-    }
-
-    footer {
-        text-align: center;
-    }
-}
-

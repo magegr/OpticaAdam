@@ -1,130 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio Jose Vicente - Proyectos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentillas - Óptica Adam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="#">Lents de contacte</a>
-                    <a class="nav-link" href="#">Ulleres graduades</a>
-                    <a class="nav-link" href="#">Ulleres de sol</a>
-                    <a class="nav-link" href="#">Accesoris</a>
-                    <a class="nav-link" href="#">Salut visual</a>
-                </div>
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="../img/logo.png" alt="Logo" class="img-fluid">
+            </a>
+            <div class="navbar-nav">
+                <a class="nav-link active" href="lentillas.html">Lents de contacte</a>
+                <a class="nav-link" href="#">Ulleres graduades</a>
+                <a class="nav-link" href="#">Ulleres de sol</a>
             </div>
         </div>
     </nav>
 
-    <div class="container">
-        <header class="carrousel">
-            <header class="carrousel-container mt-4">
-                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+    <header class="container mt-4">
+        <div id="carouselLentillas" class="carousel slide carousel-fade shadow-sm rounded" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="fotos/banner1.jpg" class="d-block w-100 img-carousel" alt="Oferta 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="bg-dark d-inline-block px-2">Noves Lentilles Progressives</h5>
                     </div>
-                    <div class="carousel-inner shadow-lg rounded">
-                        <div class="carousel-item active">
-                            <img src="fotos/php.jpg" class="d-block w-100 img-carousel" alt="Proyecto PHP">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="bg-dark d-inline-block px-2">Desarrollo Backend</h5>
-                                <p class="bg-dark d-inline-block px-2">Especialista en arquitecturas robustas con PHP.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="fotos/js.jpg" class="d-block w-100 img-carousel" alt="Proyecto JavaScript">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="bg-dark d-inline-block px-2">Interactividad con JS</h5>
-                                <p class="bg-dark d-inline-block px-2">Interfaces dinámicas y experiencia de usuario.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="fotos/htmlycss.jpg" class="d-block w-100 img-carousel" alt="HTML y CSS">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="bg-dark d-inline-block px-2">Maquetación Profesional</h5>
-                                <p class="bg-dark d-inline-block px-2">Diseños adaptables y modernos con Bootstrap.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Anterior</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Siguiente</span>
-                    </button>
                 </div>
-            </header>
-        </header>
+                <div class="carousel-item">
+                    <img src="fotos/banner2.jpg" class="d-block w-100 img-carousel" alt="Oferta 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="bg-dark d-inline-block px-2">20% de descompte en líquids</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselLentillas" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselLentillas" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </header>
 
-        <div class="row mt-5">
+    <div class="container mt-5">
+        <h1 class="titulos mb-4">Catàleg de Lentilles</h1>
 
-            <div class="col-md-5 offset-md-1 mb-4">
-                <div class="card card-daw">
-                    <img src="fotos/Flolabs.png" class="card-img">
+        <div class="row">
+            
+            <div class="col-md-4 mb-4">
+                <div class="card card-daw h-100">
+                    <img src="fotos/l1.jpg" class="card-img-top" alt="Lentillas">
                     <div class="card-body text-center">
-                        <h5 class="titulos">Flolabs</h5>
-                        <p>Conectando ideas, creando soluciones.</p>
-                        <button class="button" data-bs-toggle="modal" data-bs-target="#modalFlolabs">Ver más</button>
+                        <h5 class="fw-bold">Diàries Confort</h5>
+                        <p>Ideals per a ulls sensibles.</p>
+                        <button class="button w-100">Afegir</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5 mb-4">
-                <div class="card card-daw">
-                    <img src="fotos/Intercultural.jpg" class="card-img">
+            <div class="col-md-4 mb-4">
+                <div class="card card-daw h-100">
+                    <img src="fotos/l2.jpg" class="card-img-top" alt="Lentillas">
                     <div class="card-body text-center">
-                        <h5 class="titulos">Proyecto Intercultural</h5>
-                        <p>Intercambio Cultural y Digital.</p>
-                        <button class="button" data-bs-toggle="modal" data-bs-target="#modalIntercultural">Ver
-                            más</button>
+                        <h5 class="fw-bold">Mensuals Bio</h5>
+                        <p>Hidratació durant 30 dies.</p>
+                        <button class="button w-100">Afegir</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5 offset-md-1 mb-4">
-                <div class="card card-daw">
-                    <img src="fotos/Optica.png" class="card-img">
+            <div class="col-md-4 mb-4">
+                <div class="card card-daw h-100">
+                    <img src="fotos/l3.jpg" class="card-img-top" alt="Lentillas">
                     <div class="card-body text-center">
-                        <h5 class="titulos">Óptica Adam</h5>
-                        <p>Consistencia visual y funcional para plataformas digitales.</p>
-                        <button class="button" data-bs-toggle="modal" data-bs-target="#modalAdam">Ver más</button>
+                        <h5 class="fw-bold">Toriques (Astigmatisme)</h5>
+                        <p>Visió nítida i estable.</p>
+                        <button class="button w-100">Afegir</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5 mb-4">
-                <div class="card card-daw">
-                    <img src="fotos/angular.png" class="card-img">
+            <div class="col-md-4 mb-4">
+                <div class="card card-daw h-100">
+                    <img src="fotos/l4.jpg" class="card-img-top" alt="Lentillas">
                     <div class="card-body text-center">
-                        <h5 class="titulos">Frameworks Modernos</h5>
-                        <p>Desarrollo escalable con Angular y metodologías ágiles.</p>
-                        <button class="button" data-bs-toggle="modal" data-bs-target="#modalFrameworks">Ver más</button>
+                        <h5 class="fw-bold">Multifocals</h5>
+                        <p>Per a veure bé de lluny i prop.</p>
+                        <button class="button w-100">Afegir</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card card-daw h-100">
+                    <img src="fotos/l5.jpg" class="card-img-top" alt="Lentillas">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Lentilles de Color</h5>
+                        <p>Canvia la teua mirada amb seguretat.</p>
+                        <button class="button w-100">Afegir</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card card-daw h-100">
+                    <img src="fotos/l6.jpg" class="card-img-top" alt="Lentillas">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Pack Estalvi Líquid</h5>
+                        <p>3 pots de 360ml al millor preu.</p>
+                        <button class="button w-100">Afegir</button>
                     </div>
                 </div>
             </div>
@@ -132,120 +122,12 @@
         </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <h6>Mi ubicación</h6>
-                <div class="col-md-3"><iframe
-                        src="https://www.google.com/maps/embed?pb=!4v1768846888010!6m8!1m7!1skQg-E4gC7XzQVpQqc0TADw!2m2!1d39.36407735069756!2d-0.4673625369502804!3f166.46182853233287!4f0!5f0.7820865974627469"
-                        width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-                <div class="col-md-3">
-                    <h6>Redes Sociales</h6>
-                    <p><a href="https://www.linkedin.com/in/jose-vicente-alandi-belenguer-3b8415354/"
-                            class="text-white text-decoration-none"><span class="fa-brands fa-linkedin me-2"></span>
-                            LinkedIn</a></p>
-                    <p><a href="https://www.instagram.com/uche_21/" class="text-white text-decoration-none"><span
-                                class="fa-brands fa-instagram me-2"></span> Instagram</a></p>
-                </div>
-                <div class="col-md-3">
-                    <h6>Email</h6>
-                    <p><span class="fa-solid fa-envelope me-2"></span> josevicentealandi@gmail.com</p>
-                    <h6>Telf.</h6>
-                    <p><span class="fa-solid fa-phone me-2"></span> 622 41 87 89</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <img src="fotos/Logo.jpg" width="100">
-                    <p>© 2026 Jose Vicente Alandí. Todos los derechos reservados.</p>
-                </div>
-            </div>
+    <footer class="mt-5">
+        <div class="container text-center">
+            <p>© 2026 Óptica Adam - Secció de Contactologia</p>
         </div>
     </footer>
 
-    <div class="modal fade" id="modalFlolabs" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title titulos">Flolabs - Detalle Técnico</h5>
-                </div>
-                <div class="modal-body">
-                    <h6><b>Flolabs: Conectando ideas, creando soluciones</b></h6>
-                    <p>Proyecto integral de consultoría y soluciones informáticas especializado en la resolución de
-                        incidencias técnicas y optimización de infraestructura. El proyecto abarca desde el diseño de
-                        planes de marketing y presencia en redes sociales hasta la implementación de infraestructuras de
-                        red seguras para empresas.</p>
-                    <h6><b>Documentos Asociados</b></h6>
-                    <p><a href="https://drive.google.com/drive/u/0/folders/1plr7Qcmdkk2oO0-CYljZcVkXDZM4pr5e">Presentación
-                            del proyecto</a></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalIntercultural" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title titulos">Intercultural Project</h5>
-                </div>
-                <div class="modal-body">
-                    <h6><b>Proyecto PLVS VLTRA: Intercambio Cultural y Tecnológico</b></h6>
-                    <p>Intercambio Cultural y Tecnológico Iniciativa de colaboración internacional diseñada para
-                        fomentar el intercambio cultural entre estudiantes de España y Estados Unidos. El proyecto
-                        integra el aprendizaje de idiomas con la informática a través de la creación de un blog digital
-                        donde se exploran las tradiciones.</p>
-                    <h6>Vídeo:</h6>
-                    <div class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
-                    </div>
-                </div>
-                <div class="modal-footer"><button type="button" class="btn btn-secondary"
-                        data-bs-dismiss="modal">Cerrar</button></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalAdam" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title titulos">Óptica Adam</h5>
-                </div>
-                <div class="modal-body">
-                    <h6><b>Arquitectura y Estructuración Web para Óptica Adam</b></h6>
-                    <p>Diseño de la estructura modular para el portal web y su catálogo de productos. El proyecto se
-                        organiza en bloques horizontales (cabecera, contenido y pie) que garantizan una navegación
-                        fluida y coherente para el usuario. Incluye la normalización de iconografía cuadrada (1:1) de
-                        W3Schools para mantener una estética limpia y legible en cualquier dispositivo./p>
-                    <h6><b>Guia de estilos // Documentación</b></h6>
-                    <p><a href="https://drive.google.com/drive/u/0/folders/1plr7Qcmdkk2oO0-CYljZcVkXDZM4pr5e">Análisis
-                            de requerimientos de software.</a></p>
-                </div>
-                <div class="modal-footer"><button type="button" class="btn btn-secondary"
-                        data-bs-dismiss="modal">Cerrar</button></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalFrameworks" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title titulos">Frameworks Modernos</h5>
-                </div>
-                <div class="modal-body">
-                    <h6>Metodología:</h6>
-                    <p>Desarrollo basado en componentes y CI/CD.</p>
-                </div>
-                <div class="modal-footer"><button type="button" class="btn btn-secondary"
-                        data-bs-dismiss="modal">Cerrar</button></div>
-            </div>
-        </div>
-    </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
