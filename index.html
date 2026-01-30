@@ -1,42 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Óptica Adam</title>
 </head>
+
 <body>
-    <header>
-        <img src="" alt="">
-        <h1>Óptica Adam</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="">Llentilles</a></li>
-            <li><a href="">Ulleres Graduades</a></li>
-            <li><a href="">Ulleres de Sol</a></li>
-            <li><a href="">Accesoris</a></li>
-            <li><a href="">Salut Visual</a></li>
-        </ul>
-    </nav>
-    <main>
+
+    <div class="container-fluid pt-5">
+        <header>
+            <div class="row text-center d-flex align-items-center py-2" id="header-start">
+
+                <div class="col-2 offset-1 d-flex">
+                    <a href=""><img src="img/logo.png" alt="logo principal" class="logo w-50"></a>
+                </div>
+
+                <div class="col-6">
+                    <h2 class="d-none d-sm-block">ÒPTICA ADAM</h2>
+                    <h4 class="d-block d-sm-none">ÒPTICA ADAM</h4>
+                </div>
+
+                <div class="col-3 d-flex justify-content-center align-items-center">
+
+                    <a class="nav-link" href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                        </svg>
+                    </a>
+
+                    <button type="button" class="btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand">
+            <ul class="navbar-nav d-flex w-100 justify-content-evenly text-center my-4">
+                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="">Llentilles</a></li>
+                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="">Ulleres Graduades</a></li>
+                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="">Ulleres de Sol</a></li>
+                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="">Accesoris</a></li>
+                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="">Salut Visual</a></li>
+
+                <!--LETRA MEDIANA-->
+                <li class="nav-item d-none d-md-block d-lg-none li-lg"><a class="nav-link" href="">Llentilles</a></li>
+                <li class="nav-item d-none d-md-block d-lg-none li-lg"><a class="nav-link" href="">Ulleres Graduades</a>
+                </li>
+                <li class="nav-item d-none d-md-block d-lg-none li-lg"><a class="nav-link" href="">Ulleres de Sol</a>
+                </li>
+                <li class="nav-item d-none d-md-block d-lg-none li-lg"><a class="nav-link" href="">Accesoris</a></li>
+                <li class="nav-item d-none d-md-block d-lg-none li-lg"><a class="nav-link" href="">Salut Visual</a></li>
+
+                <li class="nav-item d-block d-md-none li-sm"><a class="nav-link" href="">Llentilles</a></li>
+                <li class="nav-item d-block d-md-none li-sm"><a class="nav-link" href="">Ulleres Graduades</a></li>
+                <li class="nav-item d-block d-md-none li-sm"><a class="nav-link" href="">Ulleres de Sol</a></li>
+                <li class="nav-item d-block d-md-none li-sm"><a class="nav-link" href="">Accesoris</a></li>
+                <li class="nav-item d-block d-md-none li-sm"><a class="nav-link" href="">Salut Visual</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <!--Vale aqui tenemos que cambiar las imagenes y si quereis podemos modificar los alt-->
         <section>
-            <article>
-                /*el carrusel con boton pide cita*/
+            <article class="my-5 container">
+                    <div id="carrusel" class="carousel slide rounded-4 overflow-hidden shadow-sm"
+                        data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/ImagenEjemplo.png" class="d-block w-100 carousel-img"
+                                    alt="Clínica - Foto 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/ImagenEjemplo.png" class="d-block w-100 carousel-img"
+                                    alt="Clínica - Foto 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/ImagenEjemplo.png" class="d-block w-100 carousel-img"
+                                    alt="Clínica - Foto 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carrusel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="" class="btn btn-primary btn-lg rounded-pill px-5 shadow-sm">
+                            PIDE CITA
+                        </a>
+                    </div>
             </article>
-            <article>
-                /*quienes somos*/
+
+            <article class="my-5 container">
+                    <h1 class="mb-4">QUI SOM?</h1>
+                    <button type="button" class="clinic-card p-0 border-0 w-100 text-start bg-transparent"
+                        aria-expanded="false">
+                        <div class="position-relative rounded-4 overflow-hidden shadow-sm">
+                            <img src="img/ImagenEjemplo.png" class="w-100 clinic-img" alt="Interior de l'òptica">
+                            
+                            <div class=" aparecer position-absolute top-0 start-0 h-100 w-100 p-4 p-md-5 d-flex flex-column justify-content-center">
+                                <div class="cajaInfo rounded-4 p-4 p-md-5 ">
+                                    <h2 class="h4 mb-3">Òptica Adam</h2>
+                                    <p class="mb-3">
+                                        Som una òptica familiar a Algemesí, especialitzada en ulleres graduades, sol,
+                                        lentilles i salut visual.
+                                    </p>
+                                    <!--gente random esto hay que modificarlo despues-->
+                                    <p class="mb-2 fw-semibold">Equip</p>
+                                    <ul class="mb-0">
+                                        <li><strong>Laura</strong> – Optometrista</li>
+                                        <li><strong>Marc</strong> – Assessor d’ulleres i ajustos</li>
+                                        <li><strong>Clàudia</strong> – Atenció al client i cites</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="position-absolute bottom-0 start-0 w-100 p-3">
+                                <span class="badge rounded-pill text-bg-dark bg-opacity-75 px-3 py-2">
+                                    Passa el ratolí per veure informació
+                                </span>
+                            </div>
+                        </div>
+                    </button>
             </article>
-            <article>
-                /*lo del mapa*/
+            <!--Yo esta parte la haria accesible para la gente ciega, y ame decis algo-->
+            <article class="my-5">
+                <div class="row g-4 align-items-stretch">
+                    <div class="col-12 col-lg-6">
+                        <div class="rounded-4 overflow-hidden shadow-sm border bg-body h-100">
+                            <div class="ratio ratio-4x3 ratio-lg-16x9 h-100">
+                                <iframe class="map-iframe"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12368.773975449241!2d-0.448640998945484!3d39.1930518787499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61b032fd41d0f9%3A0x1d73ac6f4b3ad132!2s%C3%93ptica%20Adam!5e0!3m2!1ses!2ses!4v1769078772276!5m2!1ses!2ses"
+                                    allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                    title="Mapa Óptica Adam"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card border-0 shadow-sm rounded-4 h-100" style="background-color:#dfeaf6;">
+                            <div class="card-body p-4 p-md-5 d-flex flex-column justify-content-center gap-4">
+                                <div class="d-flex gap-3 align-items-start">
+                                    <div class="bg-white bg-opacity-75 rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
+                                        style="width:44px;height:44px;color:#2a4f6f;">
+                                        <!-- logo de ubicacion -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            fill="currentColor" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zM8 1a5 5 0 0 1 5 5c0 3.366-3.91 8.018-5 9.202C6.91 14.018 3 9.366 3 6a5 5 0 0 1 5-5z" />
+                                            <path d="M8 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                        </svg>
+                                    </div>
+                                    <div class="text-uppercase fw-semibold small lh-sm"
+                                        style="color:#1e2b36; letter-spacing:.2px;">
+                                        CARRER DE CERVANTES, 51, BAIX, 46680 ALGEMESÍ, VALÈNCIA
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 align-items-start">
+                                    <div class="bg-white bg-opacity-75 rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
+                                        style="width:44px;height:44px;color:#2a4f6f;">
+                                        <!-- logo de telefono -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            fill="currentColor" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.654 1.328a.678.678 0 0 1 .736-.157l2.522 1.01c.329.132.493.49.385.822l-.805 2.415a.678.678 0 0 1-.588.461l-1.034.083a11.72 11.72 0 0 0 5.516 5.516l.083-1.034a.678.678 0 0 1 .461-.588l2.415-.805a.678.678 0 0 1 .822.385l1.01 2.522a.678.678 0 0 1-.157.736l-1.27 1.27c-.329.329-.815.45-1.247.303-2.615-.89-4.857-2.55-6.72-4.413C3.11 7.987 1.45 5.745.56 3.13c-.147-.432-.026-.918.303-1.247l1.27-1.27z" />
+                                        </svg>
+                                    </div>
+                                    <div class="fw-semibold" style="color:#1e2b36;">
+                                        <a class="text-decoration-none" style="color:#1e2b36;" href="tel:+34962017699">
+                                            962 01 76 99
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 align-items-start">
+                                    <div class="bg-white bg-opacity-75 rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
+                                        style="width:44px;height:44px;color:#2a4f6f;">
+                                        <!-- logo de reloj -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            fill="currentColor" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 3.5a.5.5 0 0 1 .5.5v4.25l2.5 1.5a.5.5 0 0 1-.5.866l-2.75-1.65A.5.5 0 0 1 7.5 8.5V4a.5.5 0 0 1 .5-.5z" />
+                                            <path
+                                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm0-1A7 7 0 1 1 8 1a7 7 0 0 1 0 14z" />
+                                        </svg>
+                                    </div>
+                                    <div class="small" style="color:#1e2b36; line-height:1.5;">
+                                        <div><span class="fw-bold">DILLUNS-DIVENDRES:</span> 10:00–13:30 / 17:00–20:00
+                                        </div>
+                                        <div><span class="fw-bold">DISSABTE:</span> 10:00–13:30</div>
+                                        <div><span class="fw-bold">DIUMENGE:</span> CERRADO</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </article>
+
             <article>
-                 /*reseñas gluglu*/
+                <!--Aqui tiene que ir las reseñas , no se hacerlas , las haremos en febrero-->
             </article>
         </section>
-    </main>
-    <footer>
+    </div>
+    <footer class="container-fluid py-5" style="background-color:#dfeaf6;">
+        <!--Nota , falta poner la imagenes cuando las tengamos disponibles y ver los tamaños-->
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-lg-3 text-center text-lg-start">
+                        <img src="img/logo.png" alt="Óptica Adam" class="img-fluid footer-optica-logo">
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <p class="text-uppercase text-center fw-semibold small mb-4" style="letter-spacing:.4px;">
+                            DESCOBRIX TOTES LES NOSTRES MARQUES
+                        </p>
+                        <div
+                            class="row row-cols-3 row-cols-sm-4 row-cols-md-6 g-3 justify-content-center align-items-center">
 
-    </footer>    
+                            <div class="col d-flex justify-content-center">
+                                <div
+                                    class="brand-tile shadow-sm rounded-4 bg-white d-flex align-items-center justify-content-center">
+                                    <img src="" alt="" class="brand-logo img-fluid">
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div
+                                    class="brand-tile shadow-sm rounded-4 bg-white d-flex align-items-center justify-content-center">
+                                    <img src="" alt="" class="brand-logo img-fluid">
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div
+                                    class="brand-tile shadow-sm rounded-4 bg-white d-flex align-items-center justify-content-center">
+                                    <img src="" alt="" class="brand-logo img-fluid">
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div
+                                    class="brand-tile shadow-sm rounded-4 bg-white d-flex align-items-center justify-content-center">
+                                    <img src="" alt="" class="brand-logo img-fluid">
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div
+                                    class="brand-tile shadow-sm rounded-4 bg-white d-flex align-items-center justify-content-center">
+                                    <img src="" alt="" class="brand-logo img-fluid">
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div
+                                    class="brand-tile shadow-sm rounded-4 bg-white d-flex align-items-center justify-content-center">
+                                    <img src="" alt="" class="brand-logo img-fluid">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-12 col-lg-12  text-center small text-muted">
+                    © Òptica Adam. Tots els drets reservats.
+                </div>
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
