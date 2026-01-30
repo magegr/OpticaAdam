@@ -10,19 +10,30 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img class="logo" src="../img/logo.png" alt="Logo" class="img-fluid">
-            </a>
-            <div class="navbar-nav">
-                <a class="nav-link" href="lentillas.html">Lents de contacte</a>
-                <a class="nav-link" href="graduadas.html">Ulleres graduades</a>
-                <a class="nav-link active" href="sol.html">Ulleres de sol</a>
-            </div>
-        </div>
-    </nav>
+     <nav class="navbar navbar-expand">
+            <ul class="navbar-nav d-flex w-100 justify-content-evenly text-center my-4">
+                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="lentillas.html">Llentilles</a></li>
+                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="graduadas.html">Ulleres Graduades</a></li>
+                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="sol.html">Ulleres de Sol</a></li>
+                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="">Accesoris</a></li>
+                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="">Salut Visual</a></li>
 
+                <!--LETRA MEDIANA-->
+                <li class="nav-item d-none d-md-block d-lg-none li-lg"><a class="nav-link" href="">Llentilles</a></li>
+                <li class="nav-item d-none d-md-block d-lg-none li-lg"><a class="nav-link" href="">Ulleres Graduades</a>
+                </li>
+                <li class="nav-item d-none d-md-block d-lg-none li-lg"><a class="nav-link" href="">Ulleres de Sol</a>
+                </li>
+                <li class="nav-item d-none d-md-block d-lg-none li-lg"><a class="nav-link" href="">Accesoris</a></li>
+                <li class="nav-item d-none d-md-block d-lg-none li-lg"><a class="nav-link" href="">Salut Visual</a></li>
+
+                <li class="nav-item d-block d-md-none li-sm"><a class="nav-link" href="lentillas.html">Llentilles</a></li>
+                <li class="nav-item d-block d-md-none li-sm"><a class="nav-link" href="graduadas.html">Ulleres Graduades</a></li>
+                <li class="nav-item d-block d-md-none li-sm"><a class="nav-link" href="sol.html">Ulleres de Sol</a></li>
+                <li class="nav-item d-block d-md-none li-sm"><a class="nav-link" href="">Accesoris</a></li>
+                <li class="nav-item d-block d-md-none li-sm"><a class="nav-link" href="">Salut Visual</a></li>
+            </ul>
+        </nav>
     <header class="container mt-4">
         <div id="carouselLentillas" class="carousel slide carousel-fade shadow-sm rounded" data-bs-ride="carousel">
             <div class="carousel-inner rounded">
@@ -123,8 +134,75 @@
     </div>
 
     <footer class="mt-5">
-        <div class="container text-center">
-            <p>© 2026 Óptica Adam - Secció de Contactologia</p>
+        <!--Nota , falta poner la imagenes cuando las tengamos disponibles y ver los tamaños-->
+        <div class="container-fluid py-5" style="background-color:#dfeaf6;">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-lg-3 text-center text-lg-start">
+                        <img src="img/logo.png" alt="Óptica Adam" class="img-fluid footer-optica-logo">
+                    </div>
+
+                    <div class="col-12 col-lg-9">
+                        <p class="text-uppercase text-center fw-semibold small mb-4" style="letter-spacing:.4px;">
+                            DESCOBRIX TOTES LES NOSTRES MARQUES
+                        </p>
+                        <div
+                            class="row row-cols-3 row-cols-sm-4 row-cols-md-6 g-3 justify-content-center align-items-center">
+
+                            <div class="col d-flex justify-content-center">
+                                <div
+                                    class="brand-tile shadow-sm rounded-4 bg-white d-flex align-items-center justify-content-center">
+                                    <img src="" alt="" class="brand-logo img-fluid">
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div
+                                    class="brand-tile shadow-sm rounded-4 bg-white d-flex align-items-center justify-content-center">
+                                    <img src="" alt="" class="brand-logo img-fluid">
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div
+                                    class="brand-tile shadow-sm rounded-4 bg-white d-flex align-items-center justify-content-center">
+                                    <img src="" alt="" class="brand-logo img-fluid">
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div
+                                    class="brand-tile shadow-sm rounded-4 bg-white d-flex align-items-center justify-content-center">
+                                    <img src="" alt="" class="brand-logo img-fluid">
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div
+                                    class="brand-tile shadow-sm rounded-4 bg-white d-flex align-items-center justify-content-center">
+                                    <img src="" alt="" class="brand-logo img-fluid">
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div
+                                    class="brand-tile shadow-sm rounded-4 bg-white d-flex align-items-center justify-content-center">
+                                    <img src="" alt="" class="brand-logo img-fluid">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid py-3 border-top bg-white">
+            <div class="row">
+                <div class="col-12 text-center small text-muted">
+                    ©️ Òptica Adam. Tots els drets reservats.
+                </div>
+            </div>
         </div>
     </footer>
 
