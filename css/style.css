@@ -14,7 +14,7 @@ header a img {
 }
 
 nav ul li {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.5em;
 }
 
@@ -34,6 +34,7 @@ nav .li-sm {
   object-fit: cover;
   display: block;
 }
+
 /*la caja que contiene la caja con el texto*/
  .aparecer{
   opacity: 0;
@@ -53,13 +54,14 @@ nav .li-sm {
     left: 80px;
   background: rgba(255,255,255,0.92);
   color: #0d2b45;
-  max-width: 720px;}
+  max-width: 720px;
+}
 
 
 body {
     background-color: #FFFFFF;
     color: #000000;          
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
