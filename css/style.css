@@ -19,18 +19,17 @@ nav ul li {
     font-size: 1.5em;
 }
 
-.li-lg {  
+nav .li-lg {  
     font-size: 1.2em;
 }
 
-.li-sm {
+nav .li-sm {
     font-size: 0.8em;
 }
 
-
 /*Quienes somos*/
 
-/*Esdto es la imagen grande*/
+/*Esto es la imagen grande*/
 .clinic-img{
   height: 420px;
   object-fit: cover;
@@ -56,31 +55,14 @@ nav ul li {
   background: rgba(255,255,255,0.92);
   color: #0d2b45;
   max-width: 720px;}
+
+
 body {
     background-color: #FFFFFF;
     color: #000000;          
     font-family: Arial, sans-serif;
 }
 
-.navbar {
-    background-color: #FFFFFF !important;
-    border-bottom: 2px solid #F2F2F2; 
-}
-
-.nav-link {
-    color: #0057FF !important; 
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.nav-link.active {
-    color: #3D82F2 !important;
-}
-
-.logo {
-    height: 100px;
-    width: 190px;
-}
 
 .titulos {
     color: #3D82F2;
