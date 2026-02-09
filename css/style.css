@@ -3,14 +3,13 @@
     
 }
 
-header h2, header h4 {
+header h2, header h5 {
     font-weight: 600;
-    margin: 0;
 }
 
 header a img {
     scale: calc(2.5);
-    min-width: 50px;
+    min-width: 45px;
     padding-bottom: 2px;
 }
 
@@ -40,7 +39,7 @@ nav .li-sm {
   opacity: 0;
   transform: translateY(10px);
   transition: opacity .25s ease, transform .25s ease;
-  background: rgba(13, 43, 69, 0.55); /* navy semitransparente */
+  background: rgba(13, 43, 69, 0.55);
 }
 
 .aparecer:hover{
